@@ -1,0 +1,11 @@
+<nav class="app-nav ">
+  <!-- <button *ngIf="langService.getCurrentLang!='vi'" (click)="langService.changeLang('vi')">Vie</button>
+  <button *ngIf="langService.getCurrentLang!='en'" (click)="langService.changeLang('en')">Eng</button> -->
+  <app-logo></app-logo>
+  <ul class="flex flex-row gap-3 text-xl">
+    <a routerLink="/asds" class="nav-link ">{{"NumberPlate" | translate}}</a>
+    <a routerLink="/" class="nav-link">{{"AboutUs" | translate}}</a>
+  </ul>
+
+  <app-switch-language></app-switch-language>
+</nav>

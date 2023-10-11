@@ -1,0 +1,40 @@
+.welcome-section {
+  .bg-img {
+    background-image: url("/assets/images/swiss-mountains.jpg");
+    background-size: cover;
+    height: 100vh;
+    transition: 2s;
+    filter: blur(20px);
+
+    &:hover {
+      filter: blur(1px);
+    }
+
+  }
+
+  .text-container {
+    padding: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+}
+
+.tool-section {
+  height: 60vh;
+  background-image: linear-gradient(to bottom right, #F36B3D, #EF6A3D);
+
+  @apply px-primary-side;
+
+  .box {
+    border-radius: 10px;
+    padding: 15px 20px;
+    width: calc(100% / 3);
+    background-color: white;
+    font-size: 20px;
+    @apply flex flex-col items-center;
+  }
+}

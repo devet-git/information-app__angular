@@ -1,0 +1,21 @@
+.app-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  transition: 0.5s;
+  border-radius: 0 0 5px 5px;
+  @apply flex justify-between items-center px-primary-side py-3;
+
+  &:hover {
+    background-color: #ffffff23;
+  }
+
+}
+
+.nav-link {
+  // background-color: red;
+  @apply hover:bg-secondary hover:text-white duration-300 p-1 rounded-md;
+}
